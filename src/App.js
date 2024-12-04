@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+
+import AlertButton from "./alert";
+import ConditionalRendering from "./condition";
+import Itemslist from "./list";
+import Increment from "./state";
+
+import HelloWorld from "./Welcome";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+      <div>
+        <HelloWorld />
+      </div>
+      
+      
+      
+
+      <div>
+        <h1>state</h1>
+        <Increment/>
+      </div>
+
+      <div>
+        <AlertButton/>
+      </div>
+
+      <div>
+        <ConditionalRendering/>
+      </div>
+
+      <div>
+        <Itemslist/>
+      </div>
+
+
+
+      
     </div>
   );
 }
